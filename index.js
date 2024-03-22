@@ -479,8 +479,8 @@ async function run() {
           total_amount: parseFloat(req.body?.subtotalTaxandShipping),
           currency: req.body?.selectedCurrencyValue,
           tran_id: tran_id, // use unique tran_id for each api ca
-          success_url: `https://taharecom.vercel.app/payment/success/${tran_id}`,
-          fail_url: `https://taharecom.vercel.app/payment/fail/${tran_id}`,
+          success_url: `https://taharm-535eb.web.app/payment/success/${tran_id}`,
+          fail_url: `https://taharm-535eb.web.app/payment/fail/${tran_id}`,
           cancel_url: 'http://localhost:3030/cancel',
           ipn_url: 'http://localhost:3030/ipn',
           shipping_method: req.body?.selectedOption,
